@@ -17,6 +17,7 @@ aside {
   display: block;
   margin: 0 auto;
   width: grid-width(12);
+  a:hover { border-bottom: 1px solid $fc-tertiary; }
 
   @include breakpoint(md) {
     //margin: 0 0 0 4rem;
@@ -27,7 +28,7 @@ aside {
 }
 
 main {
-  //border: 1px solid blue;
+  border: 1px solid blue;
   margin: 0 auto;
   width: grid-width(12);
 
@@ -43,4 +44,22 @@ body {
 
 header {
   img { max-width: 8rem; display: block; }
+}
+
+article {
+  display: inline-block;
+  border: 1px solid pink;
+  width: grid-width(12);
+
+  @include breakpoint(md) {
+    width: grid-width(7);
+  }
+}
+
+.gs-img {
+  border: 1px solid blue;
+  @include breakpoint(md) {
+    width: grid-width(4);
+    margin: 0 2rem 0 2rem;
+  }
 }
