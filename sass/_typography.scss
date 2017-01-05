@@ -6,12 +6,29 @@
 
 // headings //
 h1 {
-  font: 400 3.6rem/1.1 sans-serif;
-  color: $gravity;
-  letter-spacing: 0.1rem;
-  margin: 0 0 2rem 0;
 
   @include breakpoint(lg) {
-    font-size: 4.8rem;
+    //font-size: 4.8rem;
   }
+}
+
+
+.display {
+  font: $display $system;
+}
+
+.title {
+  font: $title $system;
+}
+
+.header {
+  font: $header $system;
+}
+
+.body {
+  font: $body $system;
+}
+
+.list {
+  font: $list $system;
 }
