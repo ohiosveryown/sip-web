@@ -1,11 +1,10 @@
 
 
-//Variable Colors
+// variable colors //
 $gravity: #2C2B2E; //primary color
 
 
-// Mixins – Media Queries
-
+// mixins – media queries //
 /*==========
 
 bas  -  0-359
@@ -43,7 +42,7 @@ xl  -  1500
     @media (min-width: 1500px) { @content; }
   }
 
-  //@else {
-    //@warn "Breakpoint mixin supports: xs, sm, md, md_landscape, lg, xl";
-  //}
+  @else {
+    @warn "Breakpoint mixin supports: xs, sm, md, md_landscape, lg, xl";
+  }
 }
