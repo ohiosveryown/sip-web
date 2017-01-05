@@ -1,9 +1,3 @@
-
-
-// typography //
-
-
-
 // headings //
 h1 {
 
@@ -12,23 +6,28 @@ h1 {
   }
 }
 
-
+// typography //
 .display {
   font: $display $system;
+  color: $fc-primary;
 }
 
 .title {
   font: $title $system;
+  color: $fc-primary;
 }
 
 .header {
   font: $header $system;
+  color: $fc-primary;
 }
 
 .body {
   font: $body $system;
+  color: $fc-secondary;
 }
 
 .list {
   font: $list $system;
+  color: $fc-secondary;
 }

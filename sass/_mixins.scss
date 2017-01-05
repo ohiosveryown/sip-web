@@ -2,12 +2,15 @@
 
 // variable colors //
 $gravity: #2C2B2E; //primary color
+$fc-primary: #161721;
+$fc-secondary: #4a4a4a;
+$fc-tertiary: #5c5c5c;
 
 // font-stack //
 $system: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
 
 // typography //
-$display: 300 3.2rem/1.4;
+$display: 300 3.2rem/1.3;
 $title: 400 2.4rem/1.2;
 $header: 600 1.6rem/1.2;
 $body: 400 1.6rem/1.8;
