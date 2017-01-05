@@ -1,9 +1,9 @@
 // styles //
 section {
-  //border: 1px solid pink;
+  border: 1px solid pink;
   margin: 0 auto;
   width: 88vw;
-  max-width: 160rem;
+  max-width: 119rem;
   display: flex;
   flex-direction: column;
 
@@ -14,14 +14,15 @@ section {
 
 aside {
   //border: 1px solid red;
+  display: block;
   margin: 0 auto;
   width: grid-width(12);
 
   @include breakpoint(md) {
-    position: sticky;
-    position: -webkit-sticky;
-    width: grid-width(1);
-    top: 20px;
+    //margin: 0 0 0 4rem;
+    position: fixed;
+    width: grid-width(2);
+    top: 9.6rem;
   }
 }
 
@@ -31,10 +32,15 @@ main {
   width: grid-width(12);
 
   @include breakpoint(md) {
-    width: grid-width(7);
+    margin-left: grid-width(3);
+    width: grid-width(8);
   }
 }
 
 body {
   min-height: 200vh;
+}
+
+header {
+  img { max-width: 8rem; display: block; }
 }
