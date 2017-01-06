@@ -40,7 +40,7 @@ xl  -  1500
     @media (min-width: 700px) { @content; }
   }
 
-  @else if $class == md_landscape {
+  @else if $class == mdl {
     @media (min-width: 1000px) { @content; }
   }
 
