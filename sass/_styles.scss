@@ -7,6 +7,7 @@ header {
 
 section {
   //border: 1px solid green;
+  @include row;
   @include container;
 }
 
@@ -23,10 +24,25 @@ nav {
 
 main {
   //border: 1px solid blue;
-
   @include breakpoint(md) {
     margin-left: grid-width(3);
     width: grid-width(7);
+  }
+}
+
+aside {
+  @include breakpoint(md) {
+    margin: 1rem 0 0 2rem;
+    width: grid-width(4);
+  }
+}
+
+.gs-img {
+  img { max-width: 100%; height: auto; }
+  @include breakpoint(md) {
+    padding: 0 1rem;
+    width: grid-width(3);
+    margin-left: grid-width(3);
   }
 }
 
