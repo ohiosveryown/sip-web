@@ -2,8 +2,13 @@ body { min-height: 300vh; }
 // styles //
 header {
   @include container;
+  @include center-x;
   margin-top: 3.2rem;
   img { max-width: 8rem; }
+
+  @include breakpoint(md) {
+    display: block;
+  }
 }
 
 section {
@@ -14,11 +19,13 @@ section {
 
 nav {
   //border: 1px solid orange;
+  display: none;
   position: fixed;
   margin: 0;
   a:hover { border-bottom: 2px solid rgba($fc-primary,0.2); }
 
   @include breakpoint(md) {
+    display: block;
     width: grid-width(2);
   }
 }
@@ -51,7 +58,9 @@ aside {
   cursor: pointer;
   background: #fff;
   border-radius: 0.4rem;
+  text-align: center;
   transition: $transition;
+  will-change: transform;
   @include breakpoint(md) {
     display: inline-block;
     height: 32rem;
@@ -60,11 +69,12 @@ aside {
 }
 
 .card:hover {
-  box-shadow: 0 0.4rem 3rem 0 rgba($fc-tertiary,0.1);
-  transform: scale3d(1.04,1.04,0);
+  box-shadow: 0 0.4rem 3rem 0 rgba($fc-tertiary,0.12);
+  transform: translateY(-0.4rem);
+  //transform: scale3d(1.04,1.04,0);
 }
 
-.card:nth-child(3) {
+.card:nth-of-type(2n) {
   //background: pink;
   margin: 0 1.6rem;
 }
