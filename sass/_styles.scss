@@ -36,6 +36,19 @@ img {
   @include responsive-img;
 }
 
+code {
+  color: rgba($fc-tertiary,0.64);
+  font-size: 1.6rem;
+  margin-top: 8rem;
+  background: rgba($fc-tertiary, 0.04);
+  border: 1px solid rgba($fc-tertiary, 0.08);
+  border-radius: 0.2rem;
+  padding: 1rem 2rem;
+
+  margin-left: grid-width(3);
+  width: grid-width(7);
+}
+
 .gs-img {
   margin-bottom: 2rem;
   width: grid-width(12);
