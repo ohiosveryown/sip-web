@@ -47,6 +47,8 @@ aside {
 
 .gs-img {
   img { max-width: 100%; height: auto; }
+  width: grid-width(12);
+  
   @include breakpoint(md) {
     padding: 0 1rem;
     width: grid-width(3);
