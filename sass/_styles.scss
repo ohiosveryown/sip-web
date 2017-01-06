@@ -22,7 +22,7 @@ nav {
   }
 }
 
-main {
+article {
   //border: 1px solid blue;
   @include breakpoint(md) {
     margin-left: grid-width(3);
@@ -44,6 +44,28 @@ aside {
     width: grid-width(3);
     margin-left: grid-width(3);
   }
+}
+
+.card {
+  cursor: pointer;
+  background: #fff;
+  border-radius: 0.4rem;
+  transition: $transition;
+  @include breakpoint(md) {
+    display: inline-block;
+    height: 32rem;
+    width: grid-width(3.76);
+  }
+}
+
+.card:hover {
+  box-shadow: 0 0.4rem 3rem 0 rgba($fc-tertiary,0.1);
+  transform: scale3d(1.04,1.04,0);
+}
+
+.card:nth-child(3) {
+  //background: pink;
+  margin: 0 1.6rem;
 }
 
 
