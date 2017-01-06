@@ -1,4 +1,37 @@
+body { min-height: 300vh; }
 // styles //
+header {
+  @include container;
+  img { max-width: 8rem; }
+}
+
+section {
+  //border: 1px solid green;
+  @include container;
+}
+
+nav {
+  //border: 1px solid orange;
+  position: fixed;
+  margin: 0;
+  a:hover { border-bottom: 2px solid rgba($fc-primary,0.2); }
+
+  @include breakpoint(md) {
+    width: grid-width(2);
+  }
+}
+
+main {
+  //border: 1px solid blue;
+
+  @include breakpoint(md) {
+    margin-left: grid-width(3);
+    width: grid-width(7);
+  }
+}
+
+
+/*
 section {
   border: 1px solid pink;
   margin: 0 auto;
@@ -47,7 +80,7 @@ header {
 }
 
 article {
-  display: inline-block;
+  @include row;
   border: 1px solid pink;
   width: grid-width(12);
 
@@ -63,3 +96,4 @@ article {
     margin: 0 2rem 0 2rem;
   }
 }
+*/
