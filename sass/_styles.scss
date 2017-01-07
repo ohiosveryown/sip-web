@@ -1,31 +1,43 @@
 body { min-height: 300vh; }
 // styles //
 header {
+  //border: 1px solid blue;
   img { max-width: 8rem; }
   @include container;
   @include center-x;
   margin-top: 3.2rem;
+  flex-wrap: wrap;
   @include breakpoint(md) { display: block; }
 }
 
-form { margin-top: -6.4rem; margin-bottom: 4rem; }
+form {
+  //border: 1px solid blue;
+  margin: 4rem 0;
+  width: grid-width(12);
+  display: block;
+  @include breakpoint(md) {margin-top: -6.4rem; margin-bottom: 4rem; }
+}
 
 input {
+  display: block;
+  width: grid-width(12);
+  border: 1px solid rgba($fc-tertiary,0.1);
+  border-radius: 0.4rem;
+  box-shadow: 0 0.2rem 2rem 0 rgba($fc-tertiary,0.07);
+  font-size: $title;
+  font-weight: 300;
+  height: 5.6rem;
+  transition: $transition;
+  will-change: transform;
+
   @include breakpoint(md) {
-    border: 1px solid rgba($fc-tertiary,0.1);
-    border-radius: 0.4rem;
-    box-shadow: 0 0.2rem 2rem 0 rgba($fc-tertiary,0.07);
     display: inline-block;
-    font-size: $title;
-    font-weight: 300;
-    height: 5.6rem;
-    transition: $transition;
     margin-left: grid-width(3);
     width: grid-width(7);
   }
 }
 
-input:hover { box-shadow: 0 1rem 3rem 0 rgba($fc-tertiary,0.1); }
+input:hover { box-shadow: 0 1rem 3rem 0 rgba($fc-tertiary,0.14); transform: translateY(-0.1rem); }
 
 ::-webkit-input-placeholder {
   padding-left: 2rem;
@@ -62,14 +74,14 @@ img {
 code {
   color: rgba($fc-tertiary,0.64);
   font-size: 1.6rem;
-  margin-top: 8rem;
+  margin: 8rem auto auto;
   background: rgba($fc-tertiary, 0.04);
   border: 1px solid rgba($fc-tertiary, 0.08);
   border-radius: 0.2rem;
   padding: 1rem 2rem;
-
-  margin-left: grid-width(3);
-  width: grid-width(7);
+  width: grid-width(12);
+  @include center-x;
+  @include breakpoint(md) { margin-left: grid-width(3); width: grid-width(7); }
 }
 
 .gs-img {
