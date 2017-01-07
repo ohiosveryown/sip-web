@@ -8,6 +8,21 @@ header {
   @include breakpoint(md) { display: block; }
 }
 
+form { margin-top: -6.4rem; margin-bottom: 8rem; }
+
+input {
+  @include breakpoint(md) {
+    border: 1px solid rgba($fc-tertiary,0.1);
+    border-radius: 0.2rem;
+    display: inline-block;
+    font-size: $title;
+    font-weight: 300;
+    height: 5.6rem;
+    margin-left: grid-width(3);
+    width: grid-width(7);
+  }
+}
+
 section {
   //border: 1px solid green;
   @include row;
